@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+:root
+{
+    --primary : #1a253f;
+    --dark: #151A33;
+    --secondary: #2b55cc;
+    --info: #4d69f6;
+    --ternary: #848db3;
+    --pure: #eff2f9;
+    --fade: #7081b9;
+    --mild: #8997bd;
+    --footer: #212A4A;
+    --black: #060b1b;
+    --twitter: #db3ee1;
+    --dribble: #ff5da0;
+    --success: #1ecab8;
+    --danger: #f1646c;
+    --dark-blue: #28365f;
+    --orange:orange;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+body
+{
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--dark);
+    -webkit-font-smoothing: antialiased;
+    
+}
+h1,h2,h3,h4,h5,h6
+{
+    margin: 0;
+    line-height: 1;
+}
+.container
+{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+nav
+{
+    background: var(--primary);
+    padding: 1.6rem 0;
+}
+nav .inner
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .inner
+{
+    text-transform: uppercase;
+    color: var(--pure);
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+nav .inner .logo i
+{
+    color: var(--info);
+
+}
+nav .inner button
+{
+    background: var(--secondary);
+    border: none;
+    padding: 0.6rem 1rem;
+    color: var(--pure);
+    font-size: 14px;
+    border-radius: 4px;
+
+}
+
+section.profile
+{
+    background: var(--orange);
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 60px;  
+    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);  */
+    padding-bottom: 4rem;
+}
+section.profile .left
+{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+section.profile .right
+{
+    flex: 1;
+
+}
+section.profile .left h2{
+    color: var(--pure);
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+section.profile .left p{
+    color: var(--pure);
+    font-size: 17px;
+
+}
+section.profile .left .cd-headline.loading-bar .cd-word-wrapper::after
+{
+    background: linear-gradient(to right, var(--secondary), var(--success));
+}
+section.profile .left img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+section.profile .left .avtar_block
+{
+    position: relative;
+    margin-right: 2rem;
+}
+section.profile .left .avtar_block span
+{
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    background: var(--info);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pure);
+    box-shadow: 0px 0px 20px 0px rgba(32, 41, 54, 0, 0.05);
+    cursor: pointer;
+}
+section.profile .right ul.contact
+{
+    list-style-type: none;
+    margin-bottom: 1.6rem;
+
+}
+section.profile .right ul.contact li
+{
+    color: var(--pure);
+    margin-bottom: .7rem;
+    font-size: 20px;
+}
+section.profile .right ul.contact li
+{
+    font-size: 22px;
+    margin-right: 0.3rem;
+
+}
+section.profile .right ul.socials
+{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+section.profile .right ul.socials li
+{
+    margin-right: 0.8rem;
+}
+section.profile .right ul.socials li a
+{
+    
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: var(--pure);
+    line-height: 36px;
+    text-align: center;
+}
+section.profile .right ul.socials li a i
+{
+    line-height: 36px;
+ /* margin-top: 10px; */
+}
+section.profile .right ul.socials li:nth-child(1) a
+{
+    background: var(--secondary);
+    
+}
+section.profile .right ul.socials li:nth-child(2) a
+{
+    background: var(--twitter);
+
+}
+section.profile .right ul.socials li:nth-child(3) a
+{
+    background: var(--secondary);
+}
+section.big
+{
+    background: var(--dark-blue);
+    max-width: 1140px;
+    height: 1000px;
+    /* clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 2% 100%); */
+
+}
+section.education
+{
+    display: flex;
+    /* align-items: center; */
+    padding: 3rem;
+    /* margin-top: 60px;   */
+    /* clip-path: polygon(0 0, 100% -50%, 100% 80%, 25% 100%, 0 80%);  */
+    padding-bottom: 4rem;
+    max-width: 1140px;
+    height: 1300px;
+    background: var(--pure);
+}
+section.education .left1
+{
+    flex: 2;
+    display: flex;
+}
+section.education .left1 h2
+{
+    color: var(--footer);
+    text-decoration: underline;
+    text-decoration-color: var(--footer);
+
+}
+section.education .left1 h3
+{
+    font-size: 25px;
+    color: var(--info);
+}
+section.education .left1 p
+{
+    color: var(--footer);
+   font-size: 22px;
+
+
+}
+section.education .left1 ul.social1
+{
+    display: flex;
+    align-items: center;
+    list-style-type: none;    
+}
+section.education .left1 ul.social1 li
+{
+    margin-top: 4rem;
+    color: var(--footer);
+    /* margin-left: rem; */
+    font-size: 22px;
+
+
+}
+section.education .left1 ul.social1 li i
+{
+    margin-left: 0.8rem;
+    line-height: 36px;
+    font-size: 40px;
+    /* color: var(--fade); */
+}
+section.education .right1
+{
+    flex: 1;    
+}
+section.education .right1 p.pro
+{
+    color: var(--footer);
+    font-size: 22px;
+}
+section.education .right1 p.pro a button
+{
+    color: var(--pure);
+    
+    background: var(--info);
+    width: 100px;
+    height:30px;
+}
+
+section.education .right1 h2
+{
+   
+    color: var(--footer);
+    text-decoration: underline;
+    text-decoration-color: var(--footer);
+
+}
+
+section.education .right1 .lang
+{
+    /* margin: 50px auto; */
+  /* padding: 2px; */
+  width: 100%;
+  max-width: 500px;
+  background: var(--pure);
+  border: 1px solid var(--dark-blue);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 10px;
+
+}
+
+section.education .right1 .lang .html
+{
+   
+    height: 100%;
+    width: 70%;
+    border-radius: 15px;
+    background: var(--orange);
+
+}
+
+section.education .right1 .lang .php
+{
+    height: 100%;
+    width: 60%;
+    border-radius: 15px;
+    background: var(--orange);
+
+}
+section.education .right1 .lang .my
+{
+    height: 100%;
+    width: 40%;
+    border-radius: 15px;
+    background: var(--orange);
+
+}
+section.education .right1 .lang .C
+{
+    height: 100%;
+    width: 60%;
+    border-radius: 15px;
+    background: var(--orange);
+
+}
+section.education .right1 .lang .java
+{
+    height: 100%;
+    width: 78%;
+    border-radius: 15px;
+    background: var(--orange);
+
+}
+section.education .right1 .lang .py
+{
+    height: 100%;
+    width: 40%;
+    border-radius: 15px;
+    background: var(--orange);
+}
+section.education .right1 .lang .tm
+{
+    height: 100%;
+    width: 60%;
+    border-radius: 15px;
+    background: var(--orange);
+}
